@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULO DE TMB</title>
+    <script src="https://kit.fontawesome.com/82464d366f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/TMB_Style.css">
+
+</head>
+
+<body>
+    <header>
+        <a href="#"><img src="img/ico.png" alt="Site flex box" style="width: 25%;"></a>
+        <nav>
+            <li><a href="">Home</a></li>
+            <li><a href="file:///C:/Users/rhayn/OneDrive/Área%20de%20Trabalho/IMC/index.html">IMC</a></li>
+            <li><a href="file:///C:/Users/rhayn/OneDrive/Área%20de%20Trabalho/IMC/BF.html">Body Fat</a></li>
+        </nav>
+
+    </header>
+    <section class="corpo" style="background-image: url(img/TMB.png);">
+        <h1>CALCULO DE TMB</h1>
+        <h3>Qual é o seu peso?</h3>
+        <br>
+        <input class="textbox" id="peso" type="number" value="KG" />
+        <br><br>
+        <h3>Qual a sua altura?</h3>
+        <br>
+        <input class="textbox" id="alt" type="number" value="Metros" />
+        <br><br>
+        <h3>Qual a sua idade?</h3>
+        <br>
+        <input class="textbox" id="idade" type="number" value="Metros" />
+        <br><br><br>
+        <button class="btn" onclick="TMB()">Calcular</button>
+
+        <p>Sua BF é de: <span id="result">0</span></P>
+    </section>
+    <section class="conteudo">
+        <h3>
+            Saiba mais sobre a TMB
+        </h3>
+        <p>O que é TMB</p>
+        <hr>
+        <a>Metabolismo basal ou Taxa metabólica basal é um método matemático, não exato, de calcular a quantidade calórica que o corpo necessita, em vinte e quatro horas, para manter-se nutrido durante o decorrer das atividades diárias, e/ou fazendo um jejum de pelo menos doze horas em repouso, sem prejudicar o funcionamento dos principais órgãos. Exemplo: o coração, cérebro, pulmões, intestino, etc., e manter a temperatura corporal sobre a normalidade. A TMB (Taxa Metabólica Basal) irá variar, a depender do nível/fator de atividade que cada indivíduo exerce.</a>
+        <br>
+        <br>
+        <br>
+
+        <p>Cálculo do TMB</p>
+        <hr>
+        <a>Taxa de atividade</a>
+        <a>1.Sedentários = 1.2 (pouco ou nenhum exercício)</a>
+        <a>2.Levemente ativo = 1.375 (exercício leve 1 a 3 dias por semana)</a>
+        <a>3.Moderadamente ativo = 1.55 (exercício moderado, faz esportes 3 a 5 dias por semana)</a>
+        <a>4.Altamente ativo = 1.725 (exercício pesado de 5 a 6 dias por semana)</a>
+        <a>5.Extremamente ativo = 1.9 (exercício pesado diariamente e até 2 vezes por dia)</a>
+        <hr>
+        <a>Cálculo para Homens: MB = Taxa de atividade x {66 + [(13,7 x Peso(kg)) + ( 5 x Altura(cm)) - (6,8 x Idade(anos))]}</a>
+        <a>Cálculo para Mulheres: MB = Taxa de atividade x {655 + [(9,6 x Peso(kg)) + (1,8 x Altura(cm)) - (4,7 x Idade(anos))]}</a>
+        <a>Deve-se dar preferência ao consumo de cereais integrais, além de frutas e verduras, ricos em fibras (são necessários por volta de 30g de fibras por dia). De 15 a 25% da dieta deve ser composta de proteínas e até 30% de gordura.</a>
+
+
+    </section>
+    <footer>
+        <p>COMPARTILHE EM</p>
+        <br>
+        <ul>
+            <li><a href="https://www.facebook.com/RHAYNER.R.SOUZA/" target="_blank"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li><a href="https://twitter.com/RhaynerRossman" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/rhaynerrs/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://br.pinterest.com/jogossouza/_saved/" target="_blank"><i
+                        class="fab fa-pinterest"></i></a></li>
+        </ul>
+        <p>todos os direitos reservados - RhaynerRossman 2021</p>
+    </footer>
+    <script src="calculos.js"></script>
+</body>
+
+</html>

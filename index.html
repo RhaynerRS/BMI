@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULO DE IMC</title>
+    <script src="https://kit.fontawesome.com/82464d366f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/IMC_Style.css">
+
+</head>
+
+<body>
+    <header>
+        <a href="#"><img src="img/ico.png" alt="Site flex box" style="width: 25%;"></a>
+        <nav>
+            <li><a href="">Home</a></li>
+            <li><a href="TMB.html">TMB</a></li>
+            <li><a href="BF.html">Body Fat</a></li>
+        </nav>
+
+    </header>
+    <section class="corpo" style="background-image: url(img/IMC.png)">
+        <h1>CALCULO DE IMC</h1>
+        <h3>Qual é o seu peso?</h3>
+        <br>
+        <input class="textbox" id="peso" type="number" value="KG" />
+        <br><br>
+        <h3>Qual a sua altura?</h3>
+        <br>
+        <input class="textbox" id="alt" type="number" value="Metros" />
+        <br><br><br>
+        <button class="btn" onclick="IMC()">Calcular</button>
+        <p>Seu imc é: <span id="imco">0</span> </p>
+        <p>E voce esta: <span id="result">0</span></P>
+    </section>
+    <section class="conteudo">
+        <h3>
+            Saiba mais sobre o IMC
+        </h3>
+        <p>Tabela de IMC</p>
+        <hr>
+        <a>Você pode utilizar a tabela abaixo para consultar o seu IMC.</a>
+        <table>
+            <thead>
+                <tr>
+                    <th>IMC</th>
+                    <th>Situação</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Abaixo de 17</td>
+                    <td>Muito abaixo do peso</td>
+                </tr>
+                <tr>
+                    <td>Entre 17 e 18,49</td>
+                    <td>Abaixo do peso</td>
+                </tr>
+                <tr>
+                    <td>Entre 18,50 e 24,99</td>
+                    <td>Peso normal</td>
+                </tr>
+                <tr>
+                    <td>Entre 25 e 29,99</td>
+                    <td>Acima do peso</td>
+                </tr>
+                <tr>
+                    <td>Entre 30 e 34,99</td>
+                    <td>Obesidade I</td>
+                </tr>
+                <tr>
+                    <td>Entre 35 e 39,99</td>
+                    <td>Obesidade II</td>
+                </tr>
+                <tr>
+                    <td>Acima de 40</td>
+                    <td>Obesidade III</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <br>
+        <br>
+
+        <p>O que é IMC</p>
+        <hr>
+        <a>O índice de massa corporal (IMC) é uma medida internacional usada para calcular se uma pessoa está no peso
+            ideal. Desenvolvido pelo polímata Lambert Quételet no fim do século XIX, trata-se de um método fácil e
+            rápido para a avaliação do nível de gordura de cada pessoa, sendo, por isso, um preditor internacional de
+            obesidade adotado pela Organização Mundial da Saúde (OMS)</a>
+        <br><br><br>
+        <p>Como calcular o IMC</p>
+        <hr>
+        <a>O IMC é determinado pela divisão da massa do indivíduo pelo quadrado de sua altura, em que a massa está em
+            quilogramas e a altura em metros.</a>
+
+
+    </section>
+    <footer>
+        <p>COMPARTILHE EM</p>
+        <br>
+        <ul>
+            <li><a href="https://www.facebook.com/RHAYNER.R.SOUZA/" target="_blank"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li><a href="https://twitter.com/RhaynerRossman" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/rhaynerrs/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://br.pinterest.com/jogossouza/_saved/" target="_blank"><i
+                        class="fab fa-pinterest"></i></a></li>
+        </ul>
+        <p>todos os direitos reservados - RhaynerRossman 2021</p>
+    </footer>
+    <script src="calculos.js"></script>
+</body>
+
+</html>
