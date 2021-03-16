@@ -34,6 +34,7 @@ input{
     width: 25%;
 
 }
+.gray{background-color: #d8e3e7;}
 :root{
     --color-1: #21D4FD
   --color-2: #B721FF
@@ -59,7 +60,7 @@ header{ width: 100%; position:absolute; top:0;left: 0; display: flex;justify-con
 position: sticky;z-index: 100000; text-transform: uppercase;}
 header img{width: 300px;}
 header nav{display: flex;}
-header li a{color: #d71a21;}
+header li a{color: #d71a21;font-weight: bold;}
 header li a:hover{color: #f0faff;}
 header li{margin: 0px 15px;}
 header li:first-child{margin-left:0 ;}
