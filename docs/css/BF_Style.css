@@ -35,7 +35,7 @@ input{
 
 }
 
-
+.gray{background-color: #d8e3e7;}
 *{
     margin: 0;
     padding: 0;
@@ -55,7 +55,7 @@ header{ width: 100%; position:absolute; top:0;left: 0; display: flex;justify-con
 position: sticky;z-index: 100000; text-transform: uppercase;}
 header img{width: 300px;}
 header nav{display: flex;}
-header li a{color: #ffd500;}
+header li a{color: #ffd500;font-weight: bold;}
 header li a:hover{color: #f0faff;}
 header li{margin: 0px 15px;}
 header li:first-child{margin-left:0 ;}
