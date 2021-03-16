@@ -28,13 +28,20 @@
     </header>
     <section class="corpo" style="background-image: url(img/TMB.png);">
         <h1>CALCULO DE TMB</h1>
-        <h3>Qual é o seu peso?</h3>
-        <br>
-        <input class="textbox" id="peso" type="number" value="KG" />
-        <br><br>
-        <h3>Qual a sua altura?</h3>
-        <br>
-        <input class="textbox" id="alt" type="number" value="Metros" />
+         <table>
+            <tr>
+                <td>
+                    <h3>Qual o seu peso?</h3>
+                </td>
+                <td>
+                    <h3>Qual a sua altura?</h3>
+                </td>
+            </tr>
+            <tr>
+                <td><input class="textbox" id="alt" type="number" value="KG" /></td>
+                <td><input class="textbox" id="peso" type="number" value="Metros" /></td>
+            </tr>
+        </table>
         <br><br>
         <h3>Qual a sua idade?</h3>
         <br>
@@ -42,7 +49,7 @@
         <br><br><br>
         <button class="btn" onclick="TMB()">Calcular</button>
 
-        <a>Sua TMB é de: <span id="result">0</span></a>
+        <h3>Sua TMB é de: <span id="result">0</span></h3>
     </section>
     <section class="conteudo">
         <h3>
