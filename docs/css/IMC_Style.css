@@ -13,7 +13,7 @@ input{
     background-color: transparent;
     margin: 3px;
     height: 25px;
-    color: #CCC;
+    background-color: #f0faff;
     color:#10368f;
 }
 th{
@@ -34,7 +34,7 @@ table {
     width: 25%;
 
 }
-
+.gray{background-color: #d8e3e7;}
 
 *{
     margin: 0;
