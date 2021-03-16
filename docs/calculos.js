@@ -1,7 +1,11 @@
 function IMC(){
     var peso=document.getElementById("peso").value
     var alt=document.getElementById("alt").value
-  imc=(peso/(alt*alt))
+    var altura=alt/100
+  if (alt.indexOf('.' || ',')>-1){ imc=(peso/(alt*alt))}
+  else{imc=(peso/(altura*altura))}
+
+ 
   if (imc<17){
     status="muito abaixo do peso."
   }
@@ -31,12 +35,24 @@ function BF(){
   var neck=document.getElementById("neck").value
   var alt=document.getElementById("alt").value
   var waist=document.getElementById("waist").value
+  var altura=alt/100
+  if (alt.indexOf('.' || ',')>-1){
   bf=(495/(1.0324 - 0.19077*Math.log10(waist-neck)  + 0.15456*Math.log10(alt*100)))-450
   result.innerHTML=bf.toFixed(2)}
+  else{bf=(495/(1.0324 - 0.19077*Math.log10(waist-neck)  + 0.15456*Math.log10(altura*100)))-450
+    result.innerHTML=bf.toFixed(2)}
+
+}
 
 function TMB(){
   var peso=document.getElementById("peso").value
   var alt=document.getElementById("alt").value
   var idade=document.getElementById("idade").value
-  tmb=(66+(13.8*peso)+(5*(alt*100)))-(6.8*idade)
-  result.innerHTML=tmb.toFixed(2)}
+  var altura=alt/100
+  if (alt.indexOf('.' || ',')>-1){
+  tmb=(66+(13.8*peso)+(5*(alt*100)))-(6.8*idade)}
+  else{tmb=(66+(13.8*peso)+(5*(altura*100)))-(6.8*idade)
+  }
+  result.innerHTML=tmb.toFixed(2)
+
+}
