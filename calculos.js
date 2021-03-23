@@ -27,9 +27,8 @@ function IMC(){
   else{
     status="Obesidade III"
   }
-       imco.innerHTML=imc.toFixed(2)
-       result.innerHTML=status}
-
+       imco.innerHTML=("Seu imc é: "+imc.toFixed(2))
+       result.innerHTML=("E voce esta: "+status)}
 
 function BF(){
   var neck=document.getElementById("neck").value
