@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitCalc</title>
+    <script src="https://kit.fontawesome.com/82464d366f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap"
+        rel="stylesheet">
+    <script data-ad-client="ca-pub-5671962041598054" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <link rel="shortcut icon" href="img/ico.png" />
+    <link rel="stylesheet" href="css/IMC_Style.css">
+
+
+
+
+</head>
+
+<body>
+    <header id="navbar">
+        <a href="#"><img src="img/ico.png" alt="Site flex box" style="width: 25%;"></a>
+        <nav>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="TMB.html">TMB</a></li>
+            <li><a href="BF.html">Body Fat</a></li>
+        </nav>
+
+    </header>
+    <section class="corpo" style="background-image: url(img/IMC.png)">
+        <h1 style="margin-top: 35px;">CÁLCULO DE IMC</h1>
+        <h3>Qual é o seu peso?</h3>
+        <br>
+        <input class="textbox" id="peso" type="number" value="KG" />
+        <br><br>
+        <h3>Qual a sua altura?</h3>
+        <br>
+        <input class="textbox" id="alt" type="number" value="Metros" />
+        <br><br><br>
+        <button class="btn" onclick="IMC()">Calcular</button>
+        <div style="min-height: 90px;">
+            <h3><span id="imco"></span> </h3>
+            <h4><span id="result"></span></h4>
+        </div>
+        <p style="text-align: left;">© kanchanachitkhamma via Canva.com</p>
+    </section>
+    <div class="conteudo">
+        <h3>
+            Saiba mais sobre o IMC
+        </h3>
+        <p style="font-weight:bold;">Tabela de IMC</p>
+        <hr>
+        <a style="text-align:center;">Olhe a tabela abaixo pra consultar os numero de cada faixa do IMC</a>
+        <table>
+            <thead>
+                <tr>
+                    <th>IMC</th>
+                    <th>Situação</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Abaixo de 17</td>
+                    <td>Muito abaixo do peso</td>
+                </tr>
+                <tr class="gray">
+                    <td>Entre 17 e 18,49</td>
+                    <td>Abaixo do peso</td>
+                </tr>
+                <tr>
+                    <td>Entre 18,50 e 24,99</td>
+                    <td>Peso normal</td>
+                </tr>
+                <tr class="gray">
+                    <td>Entre 25 e 29,99</td>
+                    <td>Acima do peso</td>
+                </tr>
+                <tr>
+                    <td>Entre 30 e 34,99</td>
+                    <td>Obesidade I</td>
+                </tr>
+                <tr class="gray">
+                    <td>Entre 35 e 39,99</td>
+                    <td>Obesidade II</td>
+                </tr>
+                <tr>
+                    <td>Acima de 40</td>
+                    <td>Obesidade III</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <br>
+        <br>
+
+        <p style="font-weight:bold;">O que é IMC</p>
+        <hr>
+        <a>O IMC (índice de massa corpora) também conhecido como BMI, é uma medida internacional que tem o objetivo de
+            calcular uma faixa de peso ideal e informar para a pessoa se ela esta dentro dessa faixa.
+        </a>
+        <a>Desenvolvido pelo belga Lambert Quételet (astrônomo, matemático, demógrafo, estatístico e sociólogo) no fim
+            do século XIX, e por ser um metodo extremamente rapido e facil de se medir o nivel de gordura de uma pessoa
+            o IMC é um dos metodos mais usado no mundo, inclusive adotado pela OMS(Organização Mundial da Saúde )</a>
+        <br><br><br>
+        <p style="font-weight:bold;">Como calcular o IMC</p>
+        <hr>
+        <a>O calculo do IMC é realizado a partir da divisão da massa(peso) de uma pessoa pelo quadrado de sua altura,
+            resultando na seguinte formula:</a>
+        <section class="formula">
+            <a>MASSA</a>
+            <hr>
+            <a>ALTURA²</a>
+        </section>
+        <br><br><br>
+        <p style="font-weight:bold;">Tabela de IMC redefinida</p>
+        <hr>
+        <a>Geralmente os profissionais da saúde classificam as pessoas como "com sobrepeso" ou "obeso" somente com base
+            no IMC (25Kg/M² e 30Kg/M² respectivamente), ignorando a idade e o sexo das pessoas.
+            Porem um estudo realizado pelo National Center for Biotechnology Information (NCBI) em 2015 mostrou que esse
+            número pode variar bastante se levarmos em conta esses fatores. </a>
+        <a style="text-align:center;">A tabela abaixo mostra os números reajustados por sexo e idade. </a>
+        <table>
+            <tbody>
+                <tr>
+                    <th></th>
+                    <th colspan="2">Sobrepeso</th>
+                    <th colspan="2">Obesidade</th>
+                </tr>
+                <tr>
+                    <td>Idade</td>
+                    <td>Homens</td>
+                    <td>Mulheres</td>
+                    <td>Homens</td>
+                    <td>Mulheres</td>
+                </tr>
+                <tr class="gray">
+                    <td>16–29</td>
+                    <td>28</td>
+                    <td>27</td>
+                    <td>33</td>
+                    <td>32</td>
+                </tr>
+                <tr>
+                    <td>30–39</td>
+                    <td>27</td>
+                    <td>27</td>
+                    <td>32</td>
+                    <td>32</td>
+                </tr>
+                <tr class="gray">
+                    <td>40–49</td>
+                    <td>25</td>
+                    <td>25</td>
+                    <td>30</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>50–59</td>
+                    <td>24</td>
+                    <td>24</td>
+                    <td>29</td>
+                    <td>29</td>
+                </tr>
+                <tr class="gray">
+                    <td>60–69</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>29</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>70–79</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>30</td>
+                    <td>31</td>
+                </tr>
+                <tr class="gray" style="border-bottom: 1px solid #10368f;">
+                    <td>80+</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>30</td>
+                    <td>31</td>
+                </tr>
+            </tbody>
+        </table>
+        <br><br><br>
+        <p style="font-weight:bold;">AVISO</p>
+        <hr>
+        <a>Ferramentas online de IMC não devem ser usadas como única fonte de orientação clínica. O IMC é apenas um
+            indicador de gordura corporal.
+            As ferramentas também não funcionarão se você tem um corpo atlético ou com uma grande massa muscular, já que
+            músculos pesam mais que a gordura distorcendo assim os resultados. </a>
+        <a style="font-weight:bold;">POR FAVOR NÃO USE ESTA OU QUALQUER OUTRA FERRAMENTE ONLINE DE IMC PARA TOMAR ALGUMA
+            DECISÃO IMPORTANTE SOBRE SUA SAUDE, É PRA ISSO QUE SERVEM OS PROFISSIONAIS!!!!! </a>
+        <p>Referencias</p>
+        <hr>
+        <a href="https://www.nature.com/articles/0802006"> <strong>The effect of sex, age and race on estimating
+                percentage body fat from body mass index: The Heritage Family Study</strong></a>
+        <a href="https://www.nature.com/articles/nutd201536"> <strong>The need to redefine age- and gender-specific
+                overweight and obese body mass index cutoff points</strong></a>
+        <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4995441/"> <strong>Body-mass index and all-cause
+                mortality: individual-participant-data meta-analysis of 239 prospective studies in four
+                continents</strong></a>
+    </div>
+    <footer>
+        <p>COMPARTILHE EM</p>
+        <br>
+        <ul>
+            <li><a href="https://www.facebook.com/RHAYNER.R.SOUZA/" target="_blank" class="icon"><i
+                        class="fab fa-facebook"></i></a>
+            </li>
+            <li><a href="https://twitter.com/RhaynerRossman" target="_blank" class="icon"><i
+                        class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/rhaynerrs/" target="_blank" class="icon"><i
+                        class="fab fa-instagram"></i></a></li>
+            <li><a href="https://br.pinterest.com/jogossouza/_saved/" target="_blank" class="icon"><i
+                        class="fab fa-pinterest"></i></a></li>
+        </ul>
+        <p>todos os direitos reservados - RhaynerRossman 2021</p>
+    </footer>
+
+    <script src="calculos.js"></script>
+    <script src="scroll.js"></script>
+
+</body>
+
+</html>
