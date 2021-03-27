@@ -199,7 +199,7 @@ footer p{color:#f0faff;}
         font-size: 1rem;
     }
 }
-@media (min-width:350px) and (max-width: 499px){
+@media (min-width:360px) and (max-width: 499px){
     .corpo h1{
         font-size: 2.5rem;
     }
@@ -247,7 +247,10 @@ footer p{color:#f0faff;}
         font-size: 0.8rem;
     }
 }
-@media (max-width:349px){
+@media (max-width:359px){
+    #navbar a{
+        font-size: 0.8rem;
+    }
     .corpo h1{
         font-size: 2.5rem;
     }
@@ -261,9 +264,9 @@ footer p{color:#f0faff;}
 
     }
     .conteudo div{
-        min-width: 250px;
-        max-height: 250px;
-        min-height: 250px;
+        min-width: 200px;
+        max-height: 200px;
+        min-height: 200px;
     }
     .conteudo .tmb h3{
         margin-top: 25px;
