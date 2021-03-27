@@ -76,7 +76,7 @@ flex-direction: column;text-align: center;background-color:#ff8e42 ;}
 .corpo h3{font-size: 1.5rem;margin-bottom: 15px;}
 .corpo .textbox{box-sizing: border-box;border:2px;border-radius:4px;border-style: hidden;background-color: #f0faff;}
 .corpo .btn{opacity: 0.9;background-color: #10368f;border-radius: 4px;color: #f0faff;padding: 20px 50px;text-transform: uppercase;margin-bottom: 100px;border: #f0faff;}
-.corpo h1,h3,.textbox,.btn,p,h4{
+.corpo h1,h3,.textbox,.btn,h4{
     animation: popout 0.8s ease;
     -webkit-animation: popout 0.5s ease;
 }

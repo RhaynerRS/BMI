@@ -70,11 +70,7 @@ transition: top 0.3s;}
 #navbar li{margin: 0px 15px;}
 #navbar li:first-child{margin-left:0 ;}
 #navbar li:last-child{margin-right:0 ;}
-@media(max-width: 700px){
-    #navbar{
-        flex-direction: column;
-    }
-}
+
 
 /*corpo*/
 .corpo p{font-size: 0.5rem;flex-direction:row;display: flex;text-align: left;justify-content: left;align-items:unset;background-repeat: no-repeat; background-position: 50% 30%;}
@@ -84,7 +80,7 @@ flex-direction: column;text-align: center;background-color:#fec28c ;}
 .corpo h3{font-size: 1.5rem;margin-bottom: 15px;}
 .corpo .textbox{border-radius:4px;border-style: hidden;background-color: #f0faff;}
 .corpo .btn{opacity: 0.9;background-color: #920244;border-radius: 4px;color: #f0faff;padding: 20px 50px;text-transform: uppercase;margin-bottom: 130px;border: #f0faff;}
-.corpo h1,h3,.textbox,.btn,p,h4{
+.corpo h1{
     animation: popout 0.8s ease;
     -webkit-animation: popout 0.5s ease;
 }
@@ -99,14 +95,7 @@ flex-direction: column;text-align: center;background-color:#fec28c ;}
     to{-webkit-transform:scale(1)}
 }
 .corpo .btn:hover{cursor: pointer;opacity: 1;}
-@media(max-width: 700px){
-    .corpo h1{
-        font-size: 2.5rem;
-    }
-    .corpo h3{
-        font-size: 1.5rem;
-    }
-}
+
 /*conteudo*/
 .conteudo{
     display: flex; flex-direction:row;align-items: center; padding: 100px 50px;justify-content: space-evenly;
@@ -188,3 +177,75 @@ footer ul li{margin-right: 10px;}
 footer ul li:last-child{margin-right: 0px;}
 footer ul li a{color: #f0faff;font-size: 2rem;}
 footer p{color:#f0faff;}
+
+@media (min-width:500px) and (max-width: 1200px){
+    .corpo h1{
+        font-size: 2.5rem;
+    }
+    .corpo h3{
+        font-size: 1.5rem;
+    }
+    
+    .conteudo{
+        flex-direction: column;
+        justify-content:unset;
+
+    }
+    .conteudo .vertical{
+        opacity: 0;
+        height: 20px;
+    }
+    footer p{
+        font-size: 1rem;
+    }
+}
+@media (min-width:350px) and (max-width: 499px){
+    .corpo h1{
+        font-size: 2.5rem;
+    }
+    .corpo h3{
+        font-size: 1.5rem;
+    }
+    #navbar{
+        flex-direction: column;
+    }
+    .conteudo{
+        flex-direction: column;
+        justify-content:unset;
+
+    }
+    .conteudo div{
+        min-width: 250px;
+        max-height: 250px;
+        min-height: 250px;
+    }
+    .conteudo .tmb h3{
+        margin-top: 25px;
+        font-size: 1rem;
+
+    }
+    .conteudo .imc h3{
+        margin-top: 25px;
+        font-size: 1rem;
+
+    }
+    .conteudo .bf h3{
+        margin-top: 25px;
+        font-size: 1rem;
+
+    }
+    .conteudo hr{
+        width: 150px;
+        margin-bottom: 35px;
+    }
+    .conteudo a{
+        font-size: 1rem;
+    }
+    .conteudo .vertical{
+        opacity: 0;
+        height: 20px;
+    }
+    footer p{
+        font-size: 0.8rem;
+    }
+}

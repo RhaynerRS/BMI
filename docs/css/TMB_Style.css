@@ -86,7 +86,7 @@ flex-direction: column;text-align: center;background-color:#d71a21 ;}
 .corpo td{color:#f0faff;}
 .corpo td:first-child{padding-right: 15px;}
 .corpo td{align-items: center;}
-.corpo h1,h3,.textbox,.btn,p{
+.corpo h1,h3,.textbox,.btn{
     animation: popout 0.8s ease;
     -webkit-animation: popout 0.5s ease;
 }

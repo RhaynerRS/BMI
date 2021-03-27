@@ -81,7 +81,7 @@ flex-direction: column;text-align: center;background-color:#ffd500 ;}
 .corpo .textbox{margin-bottom:50px;border-radius:4px;box-sizing: border-box;border-style: hidden;border:2px;background-color: #f0faff;}
 .corpo .textbox{margin-right: 25px;margin-left: 25px;color:#002f40}
 .corpo .btn{opacity: 0.9;background-color: #002f40;border-radius: 4px;color: #f0faff;padding: 20px 50px;text-transform: uppercase;margin-bottom: 60px;border: #f0faff;}
-.corpo h1,h3,.textbox,.btn,p,h4{
+.corpo h1,h3,.textbox,.btn,h4{
     animation: popout 0.8s ease;
     -webkit-animation: popout 0.5s ease;
 }.corpo .sexo{width: 210px;height: 25px;}
