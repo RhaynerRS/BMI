@@ -66,12 +66,8 @@ transition: top 0.3s;}
 #navbar li{margin: 0px 15px;}
 #navbar li:first-child{margin-left:0 ;}
 #navbar li:last-child{margin-right:0 ;}
-@media(max-width: 700px){
-    #navbar{
-        flex-direction: column;
-    }
-}
 
+.corpo{ background-position: center;}
 /*corpo*/
 .corpo{background-size: cover; min-height: 80vh;color: #f0faff;display: flex;justify-content: center;align-items: center;
 flex-direction: column;text-align: center;background-color:#ffd500 ;}
@@ -81,6 +77,9 @@ flex-direction: column;text-align: center;background-color:#ffd500 ;}
 .corpo .textbox{margin-bottom:50px;border-radius:4px;box-sizing: border-box;border-style: hidden;border:2px;background-color: #f0faff;}
 .corpo .textbox{margin-right: 25px;margin-left: 25px;color:#002f40}
 .corpo .btn{opacity: 0.9;background-color: #002f40;border-radius: 4px;color: #f0faff;padding: 20px 50px;text-transform: uppercase;margin-bottom: 60px;border: #f0faff;}
+.corpo .title{
+    margin-top: 35px;
+}
 .corpo h1,h3,.textbox,.btn,h4{
     animation: popout 0.8s ease;
     -webkit-animation: popout 0.5s ease;
@@ -96,14 +95,7 @@ flex-direction: column;text-align: center;background-color:#ffd500 ;}
     to{-webkit-transform:scale(1)}
 }
 .corpo .btn:hover{cursor: pointer;opacity: 1;}
-@media(max-width: 700px){
-    .corpo h1{
-        font-size: 2.5rem;
-    }
-    .corpo h3{
-        font-size: 1.5rem;
-    }
-}
+
 /*conteudo*/
 .conteudo{
     display: flex; flex-direction: column;align-items: center; padding: 100px 50px;
@@ -150,3 +142,71 @@ footer ul li{margin-right: 10px;}
 footer ul li:last-child{margin-right: 0px;}
 footer ul li a{color: #f0faff;font-size: 2rem;}
 footer p{color:#f0faff;}
+
+@media (min-width:550px) and (max-width: 1200px){
+
+    .corpo h1{
+        font-size: 2.5rem;
+    }
+    .corpo h3{
+        font-size: 1.5rem;
+    }
+}
+@media (min-width:360px) and (max-width: 549px){
+    .corpo .title{
+        margin-top: 85px;
+    }
+    .corpo .result{
+        min-height: 60px;
+    }
+    .corpo h1{
+        font-size: 2rem;
+    }
+    .textbox{
+        height: 25px;
+        width:120px
+    }
+    .sexo{
+        height: 25px;
+        width:120px
+    }
+    .corpo h3{
+        font-size: 0.8rem;
+    }
+    .conteudo h3{
+        font-size: 1.5rem;
+    }
+    footer p{
+        text-align: center;
+        font-size: 0.8rem;
+    }
+}
+@media (min-width:320px) and (max-width: 359px){
+    .corpo .title{
+        margin-top: 85px;
+    }
+    .corpo .result{
+        min-height: 60px;
+    }
+    .corpo h1{
+        font-size: 2rem;
+    }
+    .textbox{
+        height: 25px;
+        width:100px
+    }
+    .sexo{
+        height: 25px;
+        width:120px
+    }
+    .corpo h3{
+        font-size: 0.8rem;
+    }
+    .conteudo h3{
+        font-size: 1.5rem;
+    }
+    footer p{
+        text-align: center;
+        font-size: 0.5rem;
+    }
+}
