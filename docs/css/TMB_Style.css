@@ -135,6 +135,13 @@ footer p{color:#f0faff;}
         font-size: 1.5rem;
     }
 }
+.vertical{
+    height: 40px;width: 2px;
+    border:none;
+    background-color: #f0faff;
+    margin-left: 5px;
+    margin-right: 15px;
+}
 @media (min-width:360px) and (max-width: 549px){
     .corpo .title{
         margin-top: 85px;

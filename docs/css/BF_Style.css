@@ -181,6 +181,13 @@ footer p{color:#f0faff;}
         font-size: 0.8rem;
     }
 }
+.vertical{
+    height: 40px;width: 2px;
+    border:none;
+    background-color: #f0faff;
+    margin-left: 5px;
+    margin-right: 15px;
+}
 @media (min-width:320px) and (max-width: 359px){
     #navbar a{
         font-size: 0.8rem;
