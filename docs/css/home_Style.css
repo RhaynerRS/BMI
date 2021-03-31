@@ -63,7 +63,7 @@ a{text-decoration: none}
 position: sticky;z-index: 100000; text-transform: uppercase; position: fixed;
 top: 0;
 transition: top 0.3s;}
-#navbar img{width: 300px;justify-content: center;}
+#navbar svg{width: 42px;justify-content: center;}
 #navbar nav{display: flex;}
 #navbar li a{color: #fec28c;font-weight: bold;}
 #navbar li a:hover{color: #f0faff;}
@@ -179,6 +179,7 @@ footer ul li a{color: #f0faff;font-size: 2rem;}
 footer p{color:#f0faff;}
 
 @media (min-width:500px) and (max-width: 1200px){
+   
     .corpo h1{
         font-size: 2.5rem;
     }
@@ -200,6 +201,7 @@ footer p{color:#f0faff;}
     }
 }
 @media (min-width:360px) and (max-width: 499px){
+    
     .corpo h1{
         font-size: 2.5rem;
     }
